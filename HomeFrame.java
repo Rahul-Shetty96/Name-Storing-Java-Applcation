@@ -12,15 +12,15 @@ public class HomeFrame extends JFrame{
 	JPanel jp;
 	public HomeFrame()
 	{
-			    setVisible(true);                                                   //JFrame properties starts
+			        setVisible(true);                                                   //JFrame properties starts
 				setLocationRelativeTo(null);
 				setSize(500,150);
 				setTitle("Employee Records Management");
 				setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);                      //JFrame properties ends
 				
 				createAndAddButtons(); 
-				    										 //Creates buttons and add to JPanel
-                add(jp);                       										 //Adds the JPanel to JFrame
+				    								     //Creates buttons and add to JPanel
+                		add(jp);                       										 //Adds the JPanel to JFrame
 
 
 				
@@ -29,8 +29,7 @@ public class HomeFrame extends JFrame{
 	public void createAndAddButtons()
     {
 				add = new JButton("Add");   
-			    //add.requestFocus();                    // Focus on add button
-				view = new JButton("View");
+			        view = new JButton("View");
 				delete = new JButton("Delete");
 				modify = new JButton("Modify");
 				
@@ -54,7 +53,7 @@ public class HomeFrame extends JFrame{
 	{
 			public void actionPerformed(ActionEvent a)
 				{
-					if(a.getSource() == add)
+				if(a.getSource() == add)
 			        new AddFrame();                                //Open window of Add Frame
 			        else if(a.getSource() == view)
 			        new ViewFrame();                               //Open window of View Frame
