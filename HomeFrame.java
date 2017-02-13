@@ -63,6 +63,7 @@ public class HomeFrame extends JFrame{
 			        new ModifyFrame();                                //Open window of Modify Frame
 			        	
 			        dispose();                                     //Close Current Home Frame Window 
+				
 				}
 	}
 
