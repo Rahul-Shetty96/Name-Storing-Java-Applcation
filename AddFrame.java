@@ -59,11 +59,20 @@ return;
 }
 try{									//Validation
 int a = Integer.parseInt(id);
+char[] chars = name.toCharArray();
 
+    for (char c : chars) {
+        if(!Character.isLetter(c)) {
+            throw new Exception();
+        }
+    }
 //DATABASE INSERT
 }
 catch(NumberFormatException nf){
 JOptionPane.showMessageDialog(jp1,"Please enter a number in the Employee id field");	
+}
+catch(Exception e){
+JOptionPane.showMessageDialog(jp1,"Please enter alphabet only in the Employee name field");
 }
 
 t1.setText("");t2.setText("");
